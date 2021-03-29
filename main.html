@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="head">
+            <li id="user-email"></li>
+            <form action="./index.html">
+                <button id="logout-btn" onclick="logout()">Logout</button>
+            </form>
+        </div>
+        <div class="content-area">
+            <h1 id="heading">TODOs List</h1>
+            <div class="item-form">
+                <div id="hide">
+                    <h2>Title</h2>
+                    <input type="text" name="title" id="title" class="items-inputs">
+                    <!-- <p>Add an item to the list</p>  -->
+                    <h2>Description</h2>
+                    <input type="text" id="description" class="items-inputs">
+                    <input type="submit" value="SUBMIT" id="add">
+                    <input type="reset" value="CLEAR" id="reset" onclick="clearList()">
+                </div>
+                <div class="your-items">
+                    <h1>Your Items</h1>
+                    <table id="items-description">
+                        <tr>
+                            <th>S.No</th>
+                            <th>Title</th>
+                            <th>Items Description</th>
+                            <th>Action</th>
+                        </tr>
+                        <tbody id="tbody">
+                            <tr>
+                                <th>-</th>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./app.js"></script>
+
+</html>

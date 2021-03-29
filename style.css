@@ -1,0 +1,119 @@
+/* CSS for login page */
+
+.container {
+    color: rgb(233, 233, 233);
+    background-color: #1E1E28;
+    width: 400px;
+    height: 450px;
+    margin: 150px auto;
+    border: 1px solid #1E1E28;
+    border-radius: 10px;
+}
+
+.form-div h2 {
+    margin: 10px auto;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.inputs {
+    color: #6F7074;
+    background-color: #1E1E28;
+    border: 5px solid #CE6566;
+    border-radius: 10px;
+    width: 360px;
+    height: 40px;
+    font-size: 16px;
+    padding: 0px 10px;
+    margin: 20px 6px;
+}
+
+.inputs:focus {
+    background: rgb(204, 204, 204);
+    border: 2px solid rgb(204, 204, 204);
+}
+
+#submit {
+    width: 387px;
+    height: 40px;
+    margin: 40px 6.5px;
+    background-color: #CE6566;
+    border: 5px solid #CE6566;
+    border-radius: 10px;
+    color: linen;
+}
+
+#submit a {
+    width: 387px;
+}
+
+/* CSS For Home Page */
+
+.main-container {
+    width: 100%;
+}
+
+.head {
+    width: 100%;
+    background-color: red;
+    height: 50px;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: flex-end;
+    /* padding: 20 0px; */
+}
+
+#user-email {
+    margin: 15px 20px;
+}
+
+#logout-btn {
+    margin: 12px 20px;
+    padding: 3px 5px;
+}
+
+#heading {
+    text-align: center;
+    /* font-size: 22px; */
+}
+
+.item-form {
+    /* border: 1px solid; */
+    width: 700px;
+    margin: 20px auto;
+    height: 600px;
+}
+
+.items-inputs {
+    width: 100%;
+    height: 30px;
+}
+/* #description{
+    height: 60px;
+    padding: 0px;
+} */
+
+#add {
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+#reset{
+    padding: 5px;
+    margin: 15px 0px;
+}
+
+#items-description {
+    width: 100%;
+}
+
+#items-description td ,th {
+    text-align: center;
+    border-top: 1px solid;
+}
+
+.hidden{
+    display: none;
+}
+
