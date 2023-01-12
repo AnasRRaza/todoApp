@@ -20,15 +20,14 @@ function getAndUpdate() {
   descriptionEle = document.getElementById("description");
   tit = document.getElementById("title").value;
   des = document.getElementById("description").value;
-
+  if (titleEle.value === "" || descriptionEle.value === "") {
+    return alert("Please Enter Title and Description");
+  }
   if (localStorage.getItem("itemsJson") == null) {
     itemsJsonArray = [];
     itemsJsonArray.push([tit, des]);
     localStorage.setItem("itemsJson", JSON.stringify(itemsJsonArray));
   } else {
-    if (titleEle.value === "" && descriptionEle.value === "") {
-      alert("Please enter Title and Description");
-    }
     itemsJsonArrayStr = localStorage.getItem("itemsJson");
     itemsJsonArray = JSON.parse(itemsJsonArrayStr);
     itemsJsonArray.push([tit, des]);
